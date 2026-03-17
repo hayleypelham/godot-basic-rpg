@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2qgqxc8w5sto"
-path="res://.godot/imported/Foam.png-11df6ba226aa0cab68a0321d0dafa032.ctex"
+uid="uid://dm6ugrhxisev2"
+path="res://.godot/imported/Bushe3.png-749887e07ea42f986056e83d44e462d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/environment/tilesheets/Water/Foam/Foam.png"
-dest_files=["res://.godot/imported/Foam.png-11df6ba226aa0cab68a0321d0dafa032.ctex"]
+source_file="res://assets/environment/animated_tiles/bushes/Bushe3.png"
+dest_files=["res://.godot/imported/Bushe3.png-749887e07ea42f986056e83d44e462d8.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://67kfbqu7xew3"
-path="res://.godot/imported/Rocks_04.png-95165717f2273c3dcf2df4914e4754df.ctex"
+uid="uid://dt6i7ybpltlng"
+path="res://.godot/imported/Tree4.png-cfb595cbfe7b8093513c12bf055e2997.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/environment/tilesheets/Water/Rocks/Rocks_04.png"
-dest_files=["res://.godot/imported/Rocks_04.png-95165717f2273c3dcf2df4914e4754df.ctex"]
+source_file="res://assets/environment/animated_tiles/trees/Tree4.png"
+dest_files=["res://.godot/imported/Tree4.png-cfb595cbfe7b8093513c12bf055e2997.ctex"]
 
 [params]
 
