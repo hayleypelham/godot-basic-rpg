@@ -51,6 +51,10 @@ down={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="Environment"
+
 [rendering]
 
 renderer/rendering_method="mobile"
