@@ -380,10 +380,14 @@ states/run/position = Vector2(489.51746, 70.7275)
 transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_58kc7"), "idle", "run", SubResource("AnimationNodeStateMachineTransition_nh4ur"), "run", "idle", SubResource("AnimationNodeStateMachineTransition_bjvvg"), "idle", "attack", SubResource("AnimationNodeStateMachineTransition_635qg"), "run", "attack", SubResource("AnimationNodeStateMachineTransition_8akj5"), "attack", "idle", SubResource("AnimationNodeStateMachineTransition_bj7e2")]
 graph_offset = Vector2(43.687485, 30.71243)
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_635qg"]
+radius = 22.0
+height = 70.0
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_635qg"]
 size = Vector2(11.625, 46)
 
-[node name="Player" type="CharacterBody2D" unique_id=688072358]
+[node name="Player" type="CharacterBody2D" unique_id=688072358 groups=["player"]]
 script = ExtResource("1_635qg")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2138426761]
@@ -406,6 +410,16 @@ tree_root = SubResource("AnimationNodeStateMachine_635qg")
 anim_player = NodePath("../AnimationPlayer")
 parameters/attack/BlendSpace2D/blend_position = Vector2(0, 0)
 parameters/attack/TimeScale/scale = 1.0
+
+[node name="Hurtbox" type="Area2D" parent="." unique_id=913739792]
+collision_layer = 32
+collision_mask = 0
+input_pickable = false
+monitoring = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" unique_id=1160836793]
+position = Vector2(0, -30)
+shape = SubResource("CapsuleShape2D_635qg")
 
 [node name="HitBox" type="Area2D" parent="." unique_id=1275654575]
 position = Vector2(22, -58)

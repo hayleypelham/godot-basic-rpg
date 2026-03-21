@@ -8,6 +8,7 @@ enum State {
 }
 
 @export_category("Stats")
+@export var hitpoints: int = 150
 @export var speed: int = 400
 @export var attack_speed: float = 0.6
 @export var attack_damage: int = 60
@@ -81,6 +82,16 @@ func attack() -> void:
 	# Return the player state after attack has finished
 	await get_tree().create_timer(attack_speed).timeout
 	state = State.IDLE
+
+
+func take_damage(damage_taken: int) -> void:
+	hitpoints -= damage_taken
+	if hitpoints <= 0:
+		death()
+
+
+func death() -> void:
+	print("WASTED")
 
 
 func _on_hit_box_area_entered(area: Area2D) -> void:
