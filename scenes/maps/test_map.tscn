@@ -483,3 +483,4 @@ position = Vector2(819, 404)
 
 [node name="Effects" type="Node2D" parent="." unique_id=1273439550]
 unique_name_in_owner = true
+y_sort_enabled = true
