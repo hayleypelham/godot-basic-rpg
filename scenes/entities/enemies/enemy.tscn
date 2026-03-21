@@ -379,6 +379,13 @@ parameters/attack/TimeScale/scale = 1.0
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=194890055]
 path_postprocessing = 1
+avoidance_enabled = true
+radius = 48.0
+neighbor_distance = 128.0
+max_speed = 128.0
+debug_enabled = true
+debug_use_custom = true
+debug_path_custom_color = Color(1, 0, 0, 1)
 
 [node name="Hurtbox" type="Area2D" parent="." unique_id=1221804420]
 collision_layer = 16
@@ -402,4 +409,5 @@ monitorable = false
 position = Vector2(7.000001, -14.000002)
 shape = SubResource("RectangleShape2D_c8ylr")
 
+[connection signal="velocity_computed" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_velocity_computed"]
 [connection signal="area_entered" from="HitBox" to="." method="_on_hit_box_area_entered"]
