@@ -22,6 +22,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 PlayerData="*uid://bg7sxftpciofb"
+LevelData="*uid://bjdl1audy2hcw"
 
 [display]
 
@@ -31,6 +32,7 @@ window/size/viewport_height=1080
 [global_group]
 
 player=""
+enemies=""
 
 [input]
 
