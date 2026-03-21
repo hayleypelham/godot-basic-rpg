@@ -109,6 +109,7 @@ func update_animation() -> void:
 
 func take_damage(damage_taken: int) -> void:
 	hitpoints -= damage_taken
+	print(hitpoints)
 	if hitpoints <= 0:
 		death()
 
@@ -119,7 +120,6 @@ func death() -> void:
 	death_scene.position = global_position + Vector2(0.0,-32.0)
 	%Effects.add_child(death_scene)
 	queue_free()
-
 
 func _on_hit_box_area_entered(area: Area2D) -> void:
 	area.owner.take_damage(attack_damage)
