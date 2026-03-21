@@ -13,7 +13,7 @@ enum State {
 @export var attack_damage: int = 10
 @export var attack_speed: float = 1.0
 @export var hitpoints: int = 180
-@export var aggro_range: float = 256.0
+@export var aggro_range: float = 456.0
 @export var attack_range: float = 80.0
 @export_category("Related Scenes")
 @export var death_packed: PackedScene
