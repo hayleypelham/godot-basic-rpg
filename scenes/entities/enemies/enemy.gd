@@ -109,7 +109,6 @@ func update_animation() -> void:
 
 func take_damage(damage_taken: int) -> void:
 	hitpoints -= damage_taken
-	print(hitpoints)
 	if hitpoints <= 0:
 		death()
 
