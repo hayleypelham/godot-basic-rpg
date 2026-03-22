@@ -43,7 +43,7 @@ func level_up(new_experience: int) -> void:
 	PlayerData.level += 1
 	PlayerData.experience = new_experience
 	levelup.emit()
-
+	HUD.update_level_indicator()
 
 func display_end_game_screen(isVictorious: bool) -> void:
 	var end_game_screen_scene: Control = end_game_screen_packed.instantiate()
